@@ -142,7 +142,7 @@ export default function FriendsScreen({ navigation }) {
         </TouchableOpacity>
 
         <View style={styles.titleWrap}>
-          <WideStar w={260} h={100} color={COLORS.starYellow} />
+          <WideStar w={300} h={120} color={COLORS.starYellow} />
           <Text style={styles.title}>friends</Text>
         </View>
 

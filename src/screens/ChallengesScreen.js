@@ -208,7 +208,7 @@ export default function ChallengesScreen({ navigation }) {
         </View>
 
         <View style={styles.titleWrap}>
-          <WideStar w={280} h={110} color={COLORS.starPink} />
+          <WideStar w={300} h={120} color={COLORS.starPink} />
           <Text style={styles.title}>Challenges</Text>
         </View>
 

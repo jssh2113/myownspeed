@@ -684,32 +684,6 @@ GatherProvisioningInputs
 
 CreateBuildDescription
 
-ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk -x c++ -c /dev/null
-
-ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk -x objective-c -c /dev/null
-
-ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk -x objective-c++ -c /dev/null
-
-ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk -x c -c /dev/null
-
-ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/ibtool --version --output-format xml1
-
-ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk -x c -c /dev/null
-
-ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc --version
-
-ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -V
-
-ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --print-asset-tag-combinations --output-format xml1 /Users/jisooshin/Desktop/MyOwnSpeed/ios/MyOwnSpeed/Images.xcassets
-
-ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -v -E -dM -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk -x assembler-with-cpp -c /dev/null
-
-ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/usr/bin/actool --version --output-format xml1
-
-ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
-
-Build description signature: 66bb68596281ba7c5cfc51d63839ef9e
-Build description path: /Users/jisooshin/Library/Developer/Xcode/DerivedData/MyOwnSpeed-fggurezzxsijlgbhmzzaglvoxodz/Build/Intermediates.noindex/XCBuildData/66bb68596281ba7c5cfc51d63839ef9e.xcbuilddata
 ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk /Users/jisooshin/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator18.5-22F76-d5fc8ad4295d2ef488fb7d0f804ce0c4.sdkstatcache
     cd /Users/jisooshin/Desktop/MyOwnSpeed/ios
     /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk -o /Users/jisooshin/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/iphonesimulator18.5-22F76-d5fc8ad4295d2ef488fb7d0f804ce0c4.sdkstatcache
@@ -2300,8 +2274,8 @@ PhaseScriptExecution [CP-User]\ Generate\ app.config\ for\ prebuilt\ Constants.m
     /bin/sh -c /Users/jisooshin/Library/Developer/Xcode/DerivedData/MyOwnSpeed-fggurezzxsijlgbhmzzaglvoxodz/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/EXConstants.build/Script-46EB2E0001ADE0.sh
 Node found at: /usr/local/bin/node
 
-note: Run script build phase '[Expo] Configure project' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'MyOwnSpeed' from project 'MyOwnSpeed')
 note: Run script build phase 'Bundle React Native code and images' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'MyOwnSpeed' from project 'MyOwnSpeed')
+note: Run script build phase '[Expo] Configure project' will be run during every build because the option to run the script phase "Based on dependency analysis" is unchecked. (in target 'MyOwnSpeed' from project 'MyOwnSpeed')
 PhaseScriptExecution [Expo]\ Configure\ project /Users/jisooshin/Library/Developer/Xcode/DerivedData/MyOwnSpeed-fggurezzxsijlgbhmzzaglvoxodz/Build/Intermediates.noindex/MyOwnSpeed.build/Debug-iphonesimulator/MyOwnSpeed.build/Script-926591FE1AB911CA1388FFC0.sh (in target 'MyOwnSpeed' from project 'MyOwnSpeed')
     cd /Users/jisooshin/Desktop/MyOwnSpeed/ios
     export ACTION\=build
@@ -2898,15 +2872,14 @@ PrecompileSwiftBridgingHeader normal arm64 (in target 'MyOwnSpeed' from project 
 
 SwiftDriverJobDiscovery normal arm64 Compiling bridging header (in target 'MyOwnSpeed' from project 'MyOwnSpeed')
 
-SwiftCompile normal arm64 Compiling\ ExpoModulesProvider.swift /Users/jisooshin/Desktop/MyOwnSpeed/ios/Pods/Target\ Support\ Files/Pods-MyOwnSpeed/ExpoModulesProvider.swift (in target 'MyOwnSpeed' from project 'MyOwnSpeed')
-
-SwiftCompile normal arm64 /Users/jisooshin/Desktop/MyOwnSpeed/ios/Pods/Target\ Support\ Files/Pods-MyOwnSpeed/ExpoModulesProvider.swift (in target 'MyOwnSpeed' from project 'MyOwnSpeed')
-    cd /Users/jisooshin/Desktop/MyOwnSpeed/ios
-    
-
 SwiftEmitModule normal arm64 Emitting\ module\ for\ MyOwnSpeed (in target 'MyOwnSpeed' from project 'MyOwnSpeed')
 
 EmitSwiftModule normal arm64 (in target 'MyOwnSpeed' from project 'MyOwnSpeed')
+    cd /Users/jisooshin/Desktop/MyOwnSpeed/ios
+    
+
+SwiftCompile normal arm64 Compiling\ ExpoModulesProvider.swift /Users/jisooshin/Desktop/MyOwnSpeed/ios/Pods/Target\ Support\ Files/Pods-MyOwnSpeed/ExpoModulesProvider.swift (in target 'MyOwnSpeed' from project 'MyOwnSpeed')
+SwiftCompile normal arm64 /Users/jisooshin/Desktop/MyOwnSpeed/ios/Pods/Target\ Support\ Files/Pods-MyOwnSpeed/ExpoModulesProvider.swift (in target 'MyOwnSpeed' from project 'MyOwnSpeed')
     cd /Users/jisooshin/Desktop/MyOwnSpeed/ios
     
 
@@ -3534,15 +3507,15 @@ EXConstants.bundle/app.config
 sent 10162 bytes  received 42 bytes  1121318 bytes/sec
 total size is 63884  speedup is 6.26
 
-ExtractAppIntentsMetadata (in target 'MyOwnSpeed' from project 'MyOwnSpeed')
-    cd /Users/jisooshin/Desktop/MyOwnSpeed/ios
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name MyOwnSpeed --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk --xcode-version 16F6 --platform-family iOS --deployment-target 13.4 --bundle-identifier com.yourname.myownspeed --output /Users/jisooshin/Library/Developer/Xcode/DerivedData/MyOwnSpeed-fggurezzxsijlgbhmzzaglvoxodz/Build/Products/Debug-iphonesimulator/MyOwnSpeed.app --target-triple arm64-apple-ios13.4-simulator --binary-file /Users/jisooshin/Library/Developer/Xcode/DerivedData/MyOwnSpeed-fggurezzxsijlgbhmzzaglvoxodz/Build/Products/Debug-iphonesimulator/MyOwnSpeed.app/MyOwnSpeed --dependency-file /Users/jisooshin/Library/Developer/Xcode/DerivedData/MyOwnSpeed-fggurezzxsijlgbhmzzaglvoxodz/Build/Intermediates.noindex/MyOwnSpeed.build/Debug-iphonesimulator/MyOwnSpeed.build/Objects-normal/arm64/MyOwnSpeed_dependency_info.dat --stringsdata-file /Users/jisooshin/Library/Developer/Xcode/DerivedData/MyOwnSpeed-fggurezzxsijlgbhmzzaglvoxodz/Build/Intermediates.noindex/MyOwnSpeed.build/Debug-iphonesimulator/MyOwnSpeed.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/jisooshin/Library/Developer/Xcode/DerivedData/MyOwnSpeed-fggurezzxsijlgbhmzzaglvoxodz/Build/Intermediates.noindex/MyOwnSpeed.build/Debug-iphonesimulator/MyOwnSpeed.build/Objects-normal/arm64/MyOwnSpeed.SwiftFileList --metadata-file-list /Users/jisooshin/Library/Developer/Xcode/DerivedData/MyOwnSpeed-fggurezzxsijlgbhmzzaglvoxodz/Build/Intermediates.noindex/MyOwnSpeed.build/Debug-iphonesimulator/MyOwnSpeed.build/MyOwnSpeed.DependencyMetadataFileList --static-metadata-file-list /Users/jisooshin/Library/Developer/Xcode/DerivedData/MyOwnSpeed-fggurezzxsijlgbhmzzaglvoxodz/Build/Intermediates.noindex/MyOwnSpeed.build/Debug-iphonesimulator/MyOwnSpeed.build/MyOwnSpeed.DependencyStaticMetadataFileList --swift-const-vals-list /Users/jisooshin/Library/Developer/Xcode/DerivedData/MyOwnSpeed-fggurezzxsijlgbhmzzaglvoxodz/Build/Intermediates.noindex/MyOwnSpeed.build/Debug-iphonesimulator/MyOwnSpeed.build/Objects-normal/arm64/MyOwnSpeed.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
-2026-05-25 14:17:51.568 appintentsmetadataprocessor[17614:182782] Starting appintentsmetadataprocessor export
-2026-05-25 14:17:51.583 appintentsmetadataprocessor[17614:182782] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
-
 CopySwiftLibs /Users/jisooshin/Library/Developer/Xcode/DerivedData/MyOwnSpeed-fggurezzxsijlgbhmzzaglvoxodz/Build/Products/Debug-iphonesimulator/MyOwnSpeed.app (in target 'MyOwnSpeed' from project 'MyOwnSpeed')
     cd /Users/jisooshin/Desktop/MyOwnSpeed/ios
     builtin-swiftStdLibTool --copy --verbose --sign - --scan-executable /Users/jisooshin/Library/Developer/Xcode/DerivedData/MyOwnSpeed-fggurezzxsijlgbhmzzaglvoxodz/Build/Products/Debug-iphonesimulator/MyOwnSpeed.app/MyOwnSpeed.debug.dylib --scan-folder /Users/jisooshin/Library/Developer/Xcode/DerivedData/MyOwnSpeed-fggurezzxsijlgbhmzzaglvoxodz/Build/Products/Debug-iphonesimulator/MyOwnSpeed.app/Frameworks --scan-folder /Users/jisooshin/Library/Developer/Xcode/DerivedData/MyOwnSpeed-fggurezzxsijlgbhmzzaglvoxodz/Build/Products/Debug-iphonesimulator/MyOwnSpeed.app/PlugIns --scan-folder /Users/jisooshin/Library/Developer/Xcode/DerivedData/MyOwnSpeed-fggurezzxsijlgbhmzzaglvoxodz/Build/Products/Debug-iphonesimulator/MyOwnSpeed.app/SystemExtensions --scan-folder /Users/jisooshin/Library/Developer/Xcode/DerivedData/MyOwnSpeed-fggurezzxsijlgbhmzzaglvoxodz/Build/Products/Debug-iphonesimulator/MyOwnSpeed.app/Extensions --platform iphonesimulator --toolchain /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --destination /Users/jisooshin/Library/Developer/Xcode/DerivedData/MyOwnSpeed-fggurezzxsijlgbhmzzaglvoxodz/Build/Products/Debug-iphonesimulator/MyOwnSpeed.app/Frameworks --strip-bitcode --strip-bitcode-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/bitcode_strip --emit-dependency-info /Users/jisooshin/Library/Developer/Xcode/DerivedData/MyOwnSpeed-fggurezzxsijlgbhmzzaglvoxodz/Build/Intermediates.noindex/MyOwnSpeed.build/Debug-iphonesimulator/MyOwnSpeed.build/SwiftStdLibToolInputDependencies.dep --filter-for-swift-os
+
+ExtractAppIntentsMetadata (in target 'MyOwnSpeed' from project 'MyOwnSpeed')
+    cd /Users/jisooshin/Desktop/MyOwnSpeed/ios
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name MyOwnSpeed --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator18.5.sdk --xcode-version 16F6 --platform-family iOS --deployment-target 13.4 --bundle-identifier com.yourname.myownspeed --output /Users/jisooshin/Library/Developer/Xcode/DerivedData/MyOwnSpeed-fggurezzxsijlgbhmzzaglvoxodz/Build/Products/Debug-iphonesimulator/MyOwnSpeed.app --target-triple arm64-apple-ios13.4-simulator --binary-file /Users/jisooshin/Library/Developer/Xcode/DerivedData/MyOwnSpeed-fggurezzxsijlgbhmzzaglvoxodz/Build/Products/Debug-iphonesimulator/MyOwnSpeed.app/MyOwnSpeed --dependency-file /Users/jisooshin/Library/Developer/Xcode/DerivedData/MyOwnSpeed-fggurezzxsijlgbhmzzaglvoxodz/Build/Intermediates.noindex/MyOwnSpeed.build/Debug-iphonesimulator/MyOwnSpeed.build/Objects-normal/arm64/MyOwnSpeed_dependency_info.dat --stringsdata-file /Users/jisooshin/Library/Developer/Xcode/DerivedData/MyOwnSpeed-fggurezzxsijlgbhmzzaglvoxodz/Build/Intermediates.noindex/MyOwnSpeed.build/Debug-iphonesimulator/MyOwnSpeed.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/jisooshin/Library/Developer/Xcode/DerivedData/MyOwnSpeed-fggurezzxsijlgbhmzzaglvoxodz/Build/Intermediates.noindex/MyOwnSpeed.build/Debug-iphonesimulator/MyOwnSpeed.build/Objects-normal/arm64/MyOwnSpeed.SwiftFileList --metadata-file-list /Users/jisooshin/Library/Developer/Xcode/DerivedData/MyOwnSpeed-fggurezzxsijlgbhmzzaglvoxodz/Build/Intermediates.noindex/MyOwnSpeed.build/Debug-iphonesimulator/MyOwnSpeed.build/MyOwnSpeed.DependencyMetadataFileList --static-metadata-file-list /Users/jisooshin/Library/Developer/Xcode/DerivedData/MyOwnSpeed-fggurezzxsijlgbhmzzaglvoxodz/Build/Intermediates.noindex/MyOwnSpeed.build/Debug-iphonesimulator/MyOwnSpeed.build/MyOwnSpeed.DependencyStaticMetadataFileList --swift-const-vals-list /Users/jisooshin/Library/Developer/Xcode/DerivedData/MyOwnSpeed-fggurezzxsijlgbhmzzaglvoxodz/Build/Intermediates.noindex/MyOwnSpeed.build/Debug-iphonesimulator/MyOwnSpeed.build/Objects-normal/arm64/MyOwnSpeed.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
+2026-05-25 16:20:34.136 appintentsmetadataprocessor[23221:299621] Starting appintentsmetadataprocessor export
+2026-05-25 16:20:34.150 appintentsmetadataprocessor[23221:299621] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
 
 CodeSign /Users/jisooshin/Library/Developer/Xcode/DerivedData/MyOwnSpeed-fggurezzxsijlgbhmzzaglvoxodz/Build/Products/Debug-iphonesimulator/MyOwnSpeed.app/MyOwnSpeed.debug.dylib (in target 'MyOwnSpeed' from project 'MyOwnSpeed')
     cd /Users/jisooshin/Desktop/MyOwnSpeed/ios

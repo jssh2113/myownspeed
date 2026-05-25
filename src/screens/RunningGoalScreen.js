@@ -123,7 +123,7 @@ export default function RunningGoalScreen({ navigation }) {
         </TouchableOpacity>
 
         <View style={styles.titleWrap}>
-          <WideStar w={280} h={120} color="#C8C8C8" />
+          <WideStar w={300} h={120} color="#C8C8C8" />
           <Text style={styles.title}>running goal</Text>
         </View>
 

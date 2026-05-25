@@ -96,7 +96,7 @@ export default function SettingsScreen({ navigation, route }) {
 
         {/* 타이틀 */}
         <View style={styles.titleWrap}>
-          <WideStar w={280} h={110} color="#DDDDDD" />
+          <WideStar w={300} h={120} color="#c7c4c4" />
           <Text style={styles.title}>settings</Text>
         </View>
 

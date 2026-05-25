@@ -375,7 +375,7 @@ export default function RecordsScreen({ navigation }) {
               <Text style={[styles.weekCellDate, { color: COLORS.accentBlue }]}>Total</Text>
             </View>
             <View style={[styles.weekCellScroll, { alignItems: 'center', justifyContent: 'center' }]}>
-              <Text style={{ fontSize: 20, color: COLORS.textDark, fontFamily: 'RumRaisin', textAlign: 'center' }}>
+              <Text style={{ fontSize: 30, color: '#FFB52B', fontFamily: 'RumRaisin', textAlign: 'center' }}>
                 {fmtSec(totalSec)}
               </Text>
               <Text style={{ fontSize: 20, color: COLORS.textGray, fontFamily: 'GowunDodum', textAlign: 'center' }}>
@@ -451,7 +451,7 @@ export default function RecordsScreen({ navigation }) {
                   </View>
                   <View style={styles.yearCellBody}>
                     {total > 0 && (
-                      <Text style={styles.yearCellContent}>{fmtSec(total)}{'\n'}({total}s)</Text>
+                      <Text style={styles.yearCellContent}>{fmtSec(total)}</Text>
                     )}
                   </View>
                 </View>
@@ -476,7 +476,7 @@ export default function RecordsScreen({ navigation }) {
             <Text style={styles.arrow}>{'<'}</Text>
           </TouchableOpacity>
           <View style={styles.headerWrap}>
-            <WideStar w={W * 0.58} h={90} color={tab === 'monthly' ? '#E8E5E5' : '#E8E5E5'} />
+            <WideStar w={W * 0.75} h={110} color={tab === 'monthly' ? '#E8E5E5' : '#E8E5E5'} />
             {tab === 'daily' ? (
               <View style={{ alignItems: 'center', zIndex: 1 }}>
                 <Text style={styles.headerLabelDaily}>{headerLabel()}</Text>
@@ -541,7 +541,7 @@ export default function RecordsScreen({ navigation }) {
               </TouchableOpacity>
               <View style={{ flexDirection: 'row', gap: 10, marginTop: 12 }}>
                 <TouchableOpacity style={[styles.addOk, { backgroundColor: COLORS.accentBlue }]} onPress={addManual}>
-                  <Text style={{ color: COLORS.white, fontFamily: 'RumRaisin', fontSize: 16 }}>저장</Text>
+                  <Text style={{ color: COLORS.white, fontFamily: 'GowunDodum', fontSize: 16 }}>저장</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={[styles.addOk, { backgroundColor: COLORS.starGray }]}
                   onPress={() => { setShowAddModal(false); setAddGoals([{ h: '', m: '', s: '', repeat: '' }]); }}>
@@ -597,7 +597,7 @@ const styles = StyleSheet.create({
   weekCellDate: { fontSize: 18, fontFamily: 'RumRaisin', color: COLORS.textBrown, fontWeight: '800' },
   weekCellScroll: { flex: 1, padding: 4, alignItems: 'center', justifyContent: 'center' },
   weekCellContent: { fontSize: 10, color: COLORS.textDark, fontFamily: 'RumRaisin', lineHeight: 20, textAlign: 'center' },
-  weekCellTotal: { fontSize: 30, color: COLORS.accentOrange, fontFamily: 'RumRaisin', marginTop: 4, fontWeight: '700', textAlign: 'center'},
+  weekCellTotal: { fontSize: 25, color: COLORS.textDark, fontFamily: 'RumRaisin', marginTop: 4, fontWeight: '700', textAlign: 'center'},
 
   // Monthly - 큰 박스에 선
   monthBigBox: {
@@ -634,7 +634,7 @@ const styles = StyleSheet.create({
   addModal: { backgroundColor: COLORS.white, borderRadius: SIZES.radiusMd, padding: 24, width: 320, position: 'relative' },
   xBtn: { position: 'absolute', top: 10, right: 14, zIndex: 1 },
   xText: { fontSize: 18, fontFamily: 'RumRaisin', color: COLORS.textDark },
-  addModalTitle: { fontSize: 18, fontFamily: 'RumRaisin', marginBottom: 16, color: COLORS.textDark, textAlign: 'center' },
+  addModalTitle: { fontSize: 18, fontFamily: 'GowunDodum', marginBottom: 16, color: COLORS.textDark, textAlign: 'center' },
   addGoalRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'center', marginBottom: 12 },
   addTimeBox: { width: 38, height: 38, borderWidth: 2, borderRadius: SIZES.radiusSm, textAlign: 'center', fontSize: 14, fontWeight: '700' },
   addTimeLabel: { fontSize: 13, fontWeight: '700', marginHorizontal: 2, color: COLORS.textDark, fontFamily: 'RumRaisin' },
@@ -645,7 +645,7 @@ const styles = StyleSheet.create({
 
   // 삭제 확인 모달
   confirmModal: { backgroundColor: COLORS.white, borderRadius: SIZES.radiusMd, padding: 24, width: 280, alignItems: 'center' },
-  confirmTitle: { fontSize: 20, fontFamily: 'RumRaisin', color: COLORS.textDark, marginBottom: 10 },
+  confirmTitle: { fontSize: 20, fontFamily: 'GowunDodum', color: COLORS.textDark, marginBottom: 10 },
   confirmText: { fontSize: 15, fontFamily: 'GowunDodum', color: COLORS.textDark, textAlign: 'center' },
   confirmBtn: { flex: 1, paddingVertical: 10, borderRadius: SIZES.radiusSm, alignItems: 'center' },
   confirmBtnText: { color: COLORS.white, fontFamily: 'GowunDodum', fontWeight: '700', fontSize: 15 },

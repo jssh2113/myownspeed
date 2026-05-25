@@ -109,7 +109,7 @@ export default function HomeScreen({ navigation }) {
 
         {/* 타이틀 */}
         <View style={styles.titleWrap}>
-          <WideStar w={W * 0.75} h={height * 0.13} color="#B8D4E8" />
+          <WideStar w={W * 0.75} h={height * 0.15} color="#B8D4E8" />
           <Text style={styles.titleText}>home</Text>
         </View>
 
