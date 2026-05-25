@@ -278,7 +278,7 @@ export default function RunningScreen({ navigation }) {
         </TouchableOpacity>
 
         <View style={styles.dateWrap}>
-          <WideStar w={220} h={90} color="#DDDDDD" />
+          <WideStar w={300} h={120} color="#DDDDDD" />
           <Text style={styles.dateText}>{dateLabel}</Text>
         </View>
 
@@ -315,7 +315,7 @@ export default function RunningScreen({ navigation }) {
                     {isDone ? null
                     : isRunning ? (
                       <TouchableOpacity onPress={() => pauseTimer(idx)} style={styles.actionBtn}>
-                        <Text style={styles.pauseIcon}>⏸</Text>
+                        <Text style={styles.pauseIcon}>II</Text>
                       </TouchableOpacity>
                     ) : isLocked ? (
                       <TouchableOpacity onPress={() => openChange(idx)}>

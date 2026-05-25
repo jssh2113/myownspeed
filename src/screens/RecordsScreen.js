@@ -378,7 +378,7 @@ export default function RecordsScreen({ navigation }) {
               <Text style={{ fontSize: 30, color: '#FFB52B', fontFamily: 'RumRaisin', textAlign: 'center' }}>
                 {fmtSec(totalSec)}
               </Text>
-              <Text style={{ fontSize: 20, color: COLORS.textGray, fontFamily: 'GowunDodum', textAlign: 'center' }}>
+              <Text style={{ fontSize: 10, color: COLORS.textGray, fontFamily: 'GowunDodum', textAlign: 'center' }}>
                 ({totalSec}s)
               </Text>
             </View>
@@ -416,7 +416,7 @@ export default function RecordsScreen({ navigation }) {
                   <View key={ci} style={[styles.monthBigCell, ci < 4 && styles.monthBigCellBorder]}>
                     {day ? (
                       runDays.has(day) ? (
-                        <StarIcon filled={true} size={28} />
+                        <StarIcon filled={true} size={30} />
                       ) : (
                         <Text style={styles.monthDayNum}>{day}</Text>
                       )
@@ -610,7 +610,7 @@ const styles = StyleSheet.create({
   monthBigRowBorder: { borderBottomWidth: 2, borderColor: '#AACCDD' },
   monthBigCell: { flex: 1, alignItems: 'center', justifyContent: 'center' },
   monthBigCellBorder: { borderRightWidth: 2, borderColor: '#AACCDD' },
-  monthDayNum: { fontSize: 20, fontWeight: '700', color: COLORS.textDark, fontFamily: 'GowunDodum' },
+  monthDayNum: { fontSize: 20, fontWeight: '700', color: COLORS.textDark, fontFamily: 'RumRaisin' },
   monthStatText: { fontSize: 18, color: COLORS.textDark, fontWeight: '600', marginBottom: 4, fontFamily: 'GowunDodum' },
 
   // Yearly
