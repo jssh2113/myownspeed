@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "My Own Speed",
+    "slug": "my-own-speed",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#FFFDF5"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.yourname.myownspeed",
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "audio",
+          "fetch",
+          "processing"
+        ],
+        "NSUserNotificationUsageDescription": "러닝 타이머 알림을 보내기 위해 필요합니다."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#FFFDF5"
+      },
+      "package": "com.yourname.myownspeed",
+      "permissions": [
+        "FOREGROUND_SERVICE",
+        "RECEIVE_BOOT_COMPLETED"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "sounds": []
+        }
+      ],
+      "expo-live-activity"
+    ]
+  }
+}
